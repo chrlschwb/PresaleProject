@@ -152,8 +152,9 @@ const Presale = () => {
       tokenContract={getContract("SAFUTRENDZ")}
       presaleContract={getContract("PRESALE")}
       presaleSupply={2500000000}
+
       rate={
-        
+     
         presaleInfo.token_rate
           ? ethers.BigNumber.isBigNumber(presaleInfo.token_rate)
             ? ethers.BigNumber.from(presaleInfo.token_rate).toString()
