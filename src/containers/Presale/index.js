@@ -217,7 +217,7 @@ const Presale = () => {
       sold={
         Object.keys(presaleStatus).length > 0
           ? ethers.BigNumber.isBigNumber(presaleStatus.sold_amount)
-            ? ethers.utils.formatUnits(presaleStatus.sold_amount, DECIMAL_COIN)
+            ? ethers.BigNumber.from(presaleStatus.sold_amount).toString()
             : presaleStatus.sold_amount
           : 0
       }

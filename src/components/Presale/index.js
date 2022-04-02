@@ -84,7 +84,7 @@ const Presale = ({
           </p>
           <p className="flex">
             <span>Token Rate:</span>
-            <span>{rate.substring(0,rate.length-18)}</span>
+            <span>{rate.toString().substring(0,rate.length-18)}</span>
           </p>
           <p className="flex">
             <span>Softcap:</span>
@@ -130,7 +130,7 @@ const Presale = ({
           <p className="flex">
             <span>Sold</span>
             <span>
-              {makeUnified(Number(sold))} {token.symbol}
+            {sold.toString().substring(0,sold.length-18)} {token.symbol}
             </span>
           </p>
         </div>
