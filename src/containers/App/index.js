@@ -11,6 +11,7 @@ import AlertTemplate, { alertOptions } from "utils/GetAlertTemplate"
 const AppRouter = lazy(() => import("routers"))
 
 const App = () => (
+  
   <Suspense fallback={<Loading />}>
     <Web3ReactProvider getLibrary={getLibrary}>
       <Provider template={AlertTemplate} {...alertOptions}>

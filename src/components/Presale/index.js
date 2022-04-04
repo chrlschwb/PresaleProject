@@ -130,7 +130,7 @@ const Presale = ({
           <p className="flex">
             <span>Sold</span>
             <span>
-            {sold.toString().substring(0,sold.length-18)} {token.symbol}
+            {sold.toString().substring(0,sold.toString().length-36)} {token.symbol}
             </span>
           </p>
         </div>
