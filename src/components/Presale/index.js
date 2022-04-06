@@ -47,10 +47,10 @@ const Presale = ({
             <span>Token Symbol:</span>
             <span>{token.symbol}</span>
           </p>
-          {/* <p className="flex">
+          <p className="flex">
             <span>Token Decimal:</span>
             <span>{token.decimal}</span>
-          </p> */}
+          </p>
           <p className="flex">
             <span>Token Address:</span>
             <a
